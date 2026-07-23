@@ -1,45 +1,47 @@
 ---
 import FlowerCard from './FlowerCard.astro';
 
+const base = import.meta.env.BASE_URL;
+
 const flowers = [
   {
     name: "Red Roses",
-    image: "/images/rose.png",
+    image: `${base}/images/rose.png`,
     price: "$45",
     description: "The timeless symbol of love. Our premium long-stem roses are sourced from the finest Chilean gardens.",
     badge: "Best Seller",
   },
   {
     name: "Dutch Tulips",
-    image: "/images/tulip.png",
+    image: `${base}/images/tulip.png`,
     price: "$38",
     description: "Elegant and vibrant, these imported tulips bring a touch of Dutch mastery to your arrangements.",
     badge: "Trending",
   },
   {
     name: "Sunflowers",
-    image: "/images/sunflower.png",
+    image: `${base}/images/sunflower.png`,
     price: "$32",
     description: "Radiant golden blooms that brighten any room. Perfect for celebrations and summer vibes.",
     badge: "",
   },
   {
     name: "White Lilies",
-    image: "/images/lily.png",
+    image: `${base}/images/lily.png`,
     price: "$42",
     description: "Graceful and fragrant, our oriental lilies create an atmosphere of pure elegance and serenity.",
     badge: "",
   },
   {
     name: "Orchids",
-    image: "/images/orchid.png",
+    image: `${base}/images/orchid.png`,
     price: "$55",
     description: "Exotic Phalaenopsis orchids that last for weeks. A luxurious gift that keeps on blooming.",
     badge: "Premium",
   },
   {
     name: "Pink Peonies",
-    image: "/images/peony.png",
+    image: `${base}/images/peony.png`,
     price: "$52",
     description: "Lush, romantic peonies with layers of delicate petals. A favorite for weddings and special moments.",
     badge: "Seasonal",

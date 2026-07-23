@@ -1,5 +1,6 @@
 ---
 // About section with split layout
+const base = import.meta.env.BASE_URL;
 ---
 
 <section id="about" class="py-24 lg:py-32 bg-soft-white relative overflow-hidden">
@@ -10,18 +11,18 @@
         <div class="grid grid-cols-2 gap-4">
           <div class="space-y-4">
             <div class="rounded-2xl overflow-hidden shadow-xl shadow-charcoal/10 transform hover:scale-[1.02] transition-transform duration-500">
-              <img src="/images/hydrangea.png" alt="Beautiful hydrangea arrangement" class="w-full h-64 object-cover" loading="lazy" />
+              <img src={`${base}/images/hydrangea.png`} alt="Beautiful hydrangea arrangement" class="w-full h-64 object-cover" loading="lazy" />
             </div>
             <div class="rounded-2xl overflow-hidden shadow-xl shadow-charcoal/10 transform hover:scale-[1.02] transition-transform duration-500">
-              <img src="/images/peony.png" alt="Pink peonies" class="w-full h-48 object-cover" loading="lazy" />
+              <img src={`${base}/images/peony.png`} alt="Pink peonies" class="w-full h-48 object-cover" loading="lazy" />
             </div>
           </div>
           <div class="pt-8 space-y-4">
             <div class="rounded-2xl overflow-hidden shadow-xl shadow-charcoal/10 transform hover:scale-[1.02] transition-transform duration-500">
-              <img src="/images/orchid.png" alt="Elegant orchids" class="w-full h-48 object-cover" loading="lazy" />
+              <img src={`${base}/images/orchid.png`} alt="Elegant orchids" class="w-full h-48 object-cover" loading="lazy" />
             </div>
             <div class="rounded-2xl overflow-hidden shadow-xl shadow-charcoal/10 transform hover:scale-[1.02] transition-transform duration-500">
-              <img src="/images/rose.png" alt="Premium roses" class="w-full h-64 object-cover" loading="lazy" />
+              <img src={`${base}/images/rose.png`} alt="Premium roses" class="w-full h-64 object-cover" loading="lazy" />
             </div>
           </div>
         </div>

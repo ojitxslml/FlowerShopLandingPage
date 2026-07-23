@@ -1,12 +1,13 @@
 ---
 // Hero section with full-screen background and CTA
+const base = import.meta.env.BASE_URL;
 ---
 
 <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
   <!-- Background Image with Overlay -->
   <div class="absolute inset-0">
     <img
-      src="/images/hero.png"
+      src={`${base}/images/hero.png`}
       alt="Beautiful premium flower arrangement"
       class="w-full h-full object-cover"
       loading="eager"
