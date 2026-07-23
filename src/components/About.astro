@@ -1,0 +1,80 @@
+---
+// About section with split layout
+---
+
+<section id="about" class="py-24 lg:py-32 bg-soft-white relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <!-- Left: Image Collage -->
+      <div class="relative reveal">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="space-y-4">
+            <div class="rounded-2xl overflow-hidden shadow-xl shadow-charcoal/10 transform hover:scale-[1.02] transition-transform duration-500">
+              <img src="/images/hydrangea.png" alt="Beautiful hydrangea arrangement" class="w-full h-64 object-cover" loading="lazy" />
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-xl shadow-charcoal/10 transform hover:scale-[1.02] transition-transform duration-500">
+              <img src="/images/peony.png" alt="Pink peonies" class="w-full h-48 object-cover" loading="lazy" />
+            </div>
+          </div>
+          <div class="pt-8 space-y-4">
+            <div class="rounded-2xl overflow-hidden shadow-xl shadow-charcoal/10 transform hover:scale-[1.02] transition-transform duration-500">
+              <img src="/images/orchid.png" alt="Elegant orchids" class="w-full h-48 object-cover" loading="lazy" />
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-xl shadow-charcoal/10 transform hover:scale-[1.02] transition-transform duration-500">
+              <img src="/images/rose.png" alt="Premium roses" class="w-full h-64 object-cover" loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating badge -->
+        <div class="absolute -bottom-6 -right-6 lg:-right-10 glass rounded-2xl p-5 shadow-xl animate-float bg-white/80">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-sage to-sage-light flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="font-serif font-bold text-xl">7+ Years</p>
+              <p class="text-charcoal-light/60 text-sm">of Floral Artistry</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Text Content -->
+      <div class="reveal">
+        <span class="text-sage text-sm font-medium tracking-[0.3em] uppercase">Our Story</span>
+        <h2 class="font-serif text-4xl md:text-5xl font-bold mt-4 mb-8 leading-tight">
+          Crafting Moments<br/>
+          with <span class="italic text-sage-dark">Nature's</span> Finest
+        </h2>
+
+        <div class="space-y-6 text-charcoal-light/70 leading-relaxed">
+          <p>
+            Born in the heart of Santiago, Pétale was founded with a simple mission: to bring the world's most extraordinary flowers into the everyday lives of Chileans. What started as a small atelier in Providencia has blossomed into Santiago's most trusted premium florist.
+          </p>
+          <p>
+            We source our blooms from Chile's finest growers and partner with renowned international farms to bring you roses from Ecuador, tulips from Holland, and orchids from Thailand — each selected for their exceptional quality and lasting beauty.
+          </p>
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-3 gap-8 mt-12 pt-8 border-t border-cream-dark">
+          <div class="text-center">
+            <p class="font-serif text-3xl font-bold gradient-text">15K+</p>
+            <p class="text-charcoal-light/60 text-sm mt-1">Bouquets Delivered</p>
+          </div>
+          <div class="text-center">
+            <p class="font-serif text-3xl font-bold gradient-text">200+</p>
+            <p class="text-charcoal-light/60 text-sm mt-1">Flower Varieties</p>
+          </div>
+          <div class="text-center">
+            <p class="font-serif text-3xl font-bold gradient-text">4.9★</p>
+            <p class="text-charcoal-light/60 text-sm mt-1">Customer Rating</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

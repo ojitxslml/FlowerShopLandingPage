@@ -1,0 +1,96 @@
+---
+import FlowerCard from './FlowerCard.astro';
+
+const flowers = [
+  {
+    name: "Red Roses",
+    image: "/images/rose.png",
+    price: "$45",
+    description: "The timeless symbol of love. Our premium long-stem roses are sourced from the finest Chilean gardens.",
+    badge: "Best Seller",
+  },
+  {
+    name: "Dutch Tulips",
+    image: "/images/tulip.png",
+    price: "$38",
+    description: "Elegant and vibrant, these imported tulips bring a touch of Dutch mastery to your arrangements.",
+    badge: "Trending",
+  },
+  {
+    name: "Sunflowers",
+    image: "/images/sunflower.png",
+    price: "$32",
+    description: "Radiant golden blooms that brighten any room. Perfect for celebrations and summer vibes.",
+    badge: "",
+  },
+  {
+    name: "White Lilies",
+    image: "/images/lily.png",
+    price: "$42",
+    description: "Graceful and fragrant, our oriental lilies create an atmosphere of pure elegance and serenity.",
+    badge: "",
+  },
+  {
+    name: "Orchids",
+    image: "/images/orchid.png",
+    price: "$55",
+    description: "Exotic Phalaenopsis orchids that last for weeks. A luxurious gift that keeps on blooming.",
+    badge: "Premium",
+  },
+  {
+    name: "Pink Peonies",
+    image: "/images/peony.png",
+    price: "$52",
+    description: "Lush, romantic peonies with layers of delicate petals. A favorite for weddings and special moments.",
+    badge: "Seasonal",
+  },
+];
+---
+
+<section id="flowers" class="py-24 lg:py-32 bg-cream relative overflow-hidden">
+  <!-- Decorative background shapes -->
+  <div class="absolute top-0 right-0 w-96 h-96 bg-blush-light/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+  <div class="absolute bottom-0 left-0 w-96 h-96 bg-sage-light/15 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <!-- Section Header -->
+    <div class="text-center mb-16 reveal">
+      <span class="text-sage text-sm font-medium tracking-[0.3em] uppercase">Curated Selection</span>
+      <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-6">
+        World's Most <span class="italic text-sage-dark">Beloved</span> Flowers
+      </h2>
+      <p class="text-charcoal-light/70 text-lg max-w-2xl mx-auto leading-relaxed">
+        We bring you the planet's most popular and stunning blooms, hand-selected for their beauty, fragrance, and lasting quality.
+      </p>
+      <div class="w-20 h-1 bg-gradient-to-r from-sage to-blush mx-auto mt-8 rounded-full"></div>
+    </div>
+
+    <!-- Flower Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {flowers.map((flower, index) => (
+        <FlowerCard
+          name={flower.name}
+          image={flower.image}
+          price={flower.price}
+          description={flower.description}
+          badge={flower.badge}
+          delay={index * 100}
+        />
+      ))}
+    </div>
+
+    <!-- CTA below grid -->
+    <div class="text-center mt-16 reveal">
+      <a
+        href="#contact"
+        id="flowers-cta"
+        class="inline-flex items-center gap-3 px-8 py-4 border-2 border-sage text-sage font-semibold tracking-wider uppercase rounded-full hover:bg-sage hover:text-white transition-all duration-500 group text-sm"
+      >
+        View Full Collection
+        <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>

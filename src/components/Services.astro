@@ -1,0 +1,69 @@
+---
+// Services section
+const services = [
+  {
+    icon: `<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path></svg>`,
+    title: "Custom Bouquets",
+    description: "Tell us the occasion and we'll design a unique arrangement tailored to your taste, budget, and style preferences."
+  },
+  {
+    icon: `<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>`,
+    title: "Event Florals",
+    description: "From intimate weddings to grand celebrations, we transform venues into floral wonderlands with bespoke designs."
+  },
+  {
+    icon: `<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>`,
+    title: "Same-Day Delivery",
+    description: "Order before 2 PM and receive your fresh flowers the same day anywhere within Santiago's metropolitan area."
+  },
+  {
+    icon: `<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>`,
+    title: "Weekly Subscriptions",
+    description: "Fresh flowers delivered to your home or office every week. Keep your spaces alive with seasonal rotating arrangements."
+  },
+];
+---
+
+<section id="services" class="py-24 lg:py-32 bg-gradient-to-br from-charcoal via-charcoal to-charcoal-light text-white relative overflow-hidden">
+  <!-- Decorative -->
+  <div class="absolute top-1/4 right-0 w-72 h-72 bg-sage/10 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-1/4 left-0 w-72 h-72 bg-blush/10 rounded-full blur-3xl"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <!-- Section Header -->
+    <div class="text-center mb-16 reveal">
+      <span class="text-sage-light text-sm font-medium tracking-[0.3em] uppercase">What We Offer</span>
+      <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-6 text-white">
+        Services Designed <br/>
+        for <span class="italic text-blush-light">Every Occasion</span>
+      </h2>
+      <p class="text-white/60 text-lg max-w-2xl mx-auto leading-relaxed">
+        Whether it's a spontaneous gesture or a meticulously planned event, we have the perfect floral solution.
+      </p>
+      <div class="w-20 h-1 bg-gradient-to-r from-sage to-blush mx-auto mt-8 rounded-full"></div>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {services.map((service, index) => (
+        <div class="reveal group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-white/20 transition-all duration-500 hover:-translate-y-1" style={`transition-delay: ${index * 100}ms;`}>
+          <!-- Icon -->
+          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-sage to-sage-light flex items-center justify-center mb-6 text-white group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-sage/20">
+            <Fragment set:html={service.icon} />
+          </div>
+
+          <h3 class="font-serif text-2xl font-semibold mb-3 group-hover:text-blush-light transition-colors duration-300">{service.title}</h3>
+          <p class="text-white/60 leading-relaxed">{service.description}</p>
+
+          <!-- Subtle arrow -->
+          <div class="mt-6 flex items-center gap-2 text-sage-light text-sm font-medium opacity-0 group-hover:opacity-100 transform translate-x-[-10px] group-hover:translate-x-0 transition-all duration-500">
+            <span>Learn more</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,72 @@
+---
+// Hero section with full-screen background and CTA
+---
+
+<section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <!-- Background Image with Overlay -->
+  <div class="absolute inset-0">
+    <img
+      src="/images/hero.png"
+      alt="Beautiful premium flower arrangement"
+      class="w-full h-full object-cover"
+      loading="eager"
+    />
+    <div class="absolute inset-0 bg-gradient-to-b from-charcoal/60 via-charcoal/40 to-charcoal/70"></div>
+  </div>
+
+  <!-- Decorative floating petals -->
+  <div class="absolute inset-0 pointer-events-none overflow-hidden">
+    <div class="petal" style="left: 10%; animation-duration: 8s; animation-delay: 0s;"></div>
+    <div class="petal" style="left: 20%; animation-duration: 10s; animation-delay: 2s; width: 8px; height: 12px;"></div>
+    <div class="petal" style="left: 40%; animation-duration: 12s; animation-delay: 4s;"></div>
+    <div class="petal" style="left: 60%; animation-duration: 9s; animation-delay: 1s; width: 10px; height: 14px;"></div>
+    <div class="petal" style="left: 75%; animation-duration: 11s; animation-delay: 3s;"></div>
+    <div class="petal" style="left: 90%; animation-duration: 7s; animation-delay: 5s; width: 14px; height: 18px;"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+    <div class="animate-fade-in-up">
+      <p class="text-blush-light text-sm md:text-base font-medium tracking-[0.3em] uppercase mb-6">
+        ✿ Santiago, Chile — Est. 2018
+      </p>
+    </div>
+
+    <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight mb-6 animate-fade-in-up stagger-1" style="opacity: 0;">
+      Where Every <br/>
+      <span class="italic text-blush-light">Bloom</span> Tells<br/>
+      a Story
+    </h1>
+
+    <p class="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in-up stagger-2" style="opacity: 0;">
+      Hand-crafted bouquets and premium arrangements made with the world's most beloved flowers. Delivered with love across Santiago.
+    </p>
+
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up stagger-3" style="opacity: 0;">
+      <a
+        href="#flowers"
+        id="hero-cta-primary"
+        class="shimmer-btn px-10 py-4 text-white font-semibold tracking-wider uppercase rounded-full shadow-2xl shadow-sage/30 hover:shadow-sage/50 transition-all duration-500 hover:-translate-y-1 text-sm"
+      >
+        Explore Collection
+      </a>
+      <a
+        href="#about"
+        id="hero-cta-secondary"
+        class="glass px-10 py-4 text-white font-semibold tracking-wider uppercase rounded-full hover:bg-white/25 transition-all duration-500 hover:-translate-y-1 text-sm"
+      >
+        Our Story
+      </a>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
+    <a href="#flowers" class="flex flex-col items-center gap-2 text-white/60 hover:text-white/90 transition-colors">
+      <span class="text-xs tracking-[0.2em] uppercase">Scroll</span>
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      </svg>
+    </a>
+  </div>
+</section>

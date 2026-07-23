@@ -1,0 +1,30 @@
+---
+// Horizontal scrolling banner section with flower features
+const features = [
+  "✿ Fresh Daily Blooms",
+  "❀ Handcrafted Arrangements",
+  "✿ Worldwide Flower Selection",
+  "❀ Same-Day Santiago Delivery",
+  "✿ Eco-Friendly Packaging",
+  "❀ 7-Day Freshness Guarantee",
+  "✿ Expert Floral Designers",
+  "❀ Custom Event Florals",
+];
+---
+
+<div class="bg-gradient-to-r from-blush via-blush-dark to-dusty-rose py-4 overflow-hidden">
+  <div class="flex animate-[scroll_30s_linear_infinite] whitespace-nowrap">
+    {[...features, ...features].map((feature) => (
+      <span class="mx-8 text-white text-sm font-medium tracking-widest uppercase flex-shrink-0">
+        {feature}
+      </span>
+    ))}
+  </div>
+</div>
+
+<style>
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+</style>
