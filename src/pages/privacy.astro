@@ -1,0 +1,284 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+
+const base = import.meta.env.BASE_URL;
+const lastUpdated = "August 30, 2026";
+---
+
+<Layout
+  title="Privacy Policy — Pétale Flower Boutique"
+  description="Privacy Policy for Pétale Flower Boutique. Learn how customer information, delivery details, and floral gift orders are treated in our boutique mockup demonstration."
+>
+  <Navbar isSubpage={true} />
+
+  <main class="min-h-screen pt-28 pb-20 bg-cream relative overflow-hidden">
+    <!-- Decorative background elements -->
+    <div class="absolute top-20 right-0 w-96 h-96 bg-blush-light/30 rounded-full blur-3xl pointer-events-none -translate-y-12 translate-x-1/3"></div>
+    <div class="absolute top-1/2 left-0 w-96 h-96 bg-sage-light/20 rounded-full blur-3xl pointer-events-none -translate-x-1/3"></div>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <!-- Breadcrumb -->
+      <nav class="flex items-center gap-2 text-xs md:text-sm text-charcoal-light/60 mb-6 font-medium" aria-label="Breadcrumb">
+        <a href={base} class="hover:text-sage-dark transition-colors">Home</a>
+        <span class="text-charcoal-light/30">/</span>
+        <span class="text-charcoal font-semibold">Privacy Policy</span>
+      </nav>
+
+      <!-- Page Header -->
+      <div class="text-center sm:text-left pb-10 border-b border-cream-dark">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sage/10 text-sage-dark text-xs font-semibold tracking-wider uppercase mb-4">
+          <span class="w-2 h-2 rounded-full bg-sage animate-pulse"></span>
+          Mockup Boutique Document
+        </div>
+        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-charcoal tracking-tight mb-4">
+          Privacy <span class="italic text-sage-dark">Policy</span>
+        </h1>
+        <p class="text-charcoal-light/80 text-base sm:text-lg max-w-2xl leading-relaxed">
+          How Pétale protects and treats information regarding your floral arrangements, delivery coordinates, and gift orders across Santiago, Chile.
+        </p>
+        <div class="flex flex-wrap items-center gap-y-2 gap-x-6 text-xs text-charcoal-light/60 mt-4 pt-4 border-t border-cream-dark/60">
+          <span><strong>Effective Date:</strong> January 1, 2026</span>
+          <span>•</span>
+          <span><strong>Last Revised:</strong> {lastUpdated}</span>
+          <span>•</span>
+          <span><strong>Status:</strong> Portfolio Demonstration (Mockup)</span>
+        </div>
+      </div>
+
+      <!-- Prominent Mockup Disclaimer Banner -->
+      <div class="my-8 p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-amber-50 to-orange-50/60 border border-amber-200/80 shadow-sm flex flex-col sm:flex-row gap-4 items-start">
+        <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-700 flex items-center justify-center shrink-0">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <div class="space-y-1">
+          <h2 class="text-sm sm:text-base font-bold text-amber-900 tracking-tight">
+            Demonstration Mockup Notice
+          </h2>
+          <p class="text-xs sm:text-sm text-amber-800/90 leading-relaxed">
+            This page is a <strong>concept mockup</strong> created exclusively for design and portfolio demonstration purposes for the fictitious brand <em>Pétale</em>. No real personal data, commercial transactions, or binding legal relationships are handled through this website.
+          </p>
+        </div>
+      </div>
+
+      <!-- Quick Navigation Index / Jump Pills -->
+      <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-5 border border-cream-dark/80 shadow-sm mb-12">
+        <p class="text-xs font-bold uppercase tracking-wider text-charcoal-light/70 mb-3 flex items-center gap-2">
+          <svg class="w-4 h-4 text-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"/>
+          </svg>
+          Quick Navigation
+        </p>
+        <div class="flex flex-wrap gap-2 text-xs">
+          <a href="#collect" class="px-3 py-1.5 rounded-lg bg-cream hover:bg-sage/15 text-charcoal-light hover:text-sage-dark transition-colors">1. Information We Collect</a>
+          <a href="#usage" class="px-3 py-1.5 rounded-lg bg-cream hover:bg-sage/15 text-charcoal-light hover:text-sage-dark transition-colors">2. How We Use Data</a>
+          <a href="#recipients" class="px-3 py-1.5 rounded-lg bg-cream hover:bg-sage/15 text-charcoal-light hover:text-sage-dark transition-colors">3. Recipient & Gift Privacy</a>
+          <a href="#security" class="px-3 py-1.5 rounded-lg bg-cream hover:bg-sage/15 text-charcoal-light hover:text-sage-dark transition-colors">4. Payments & Security</a>
+          <a href="#cookies" class="px-3 py-1.5 rounded-lg bg-cream hover:bg-sage/15 text-charcoal-light hover:text-sage-dark transition-colors">5. Cookies & Preferences</a>
+          <a href="#rights" class="px-3 py-1.5 rounded-lg bg-cream hover:bg-sage/15 text-charcoal-light hover:text-sage-dark transition-colors">6. Customer Rights</a>
+          <a href="#contact-policy" class="px-3 py-1.5 rounded-lg bg-cream hover:bg-sage/15 text-charcoal-light hover:text-sage-dark transition-colors">7. Inquiries & Contact</a>
+        </div>
+      </div>
+
+      <!-- Content Sections -->
+      <div class="space-y-10 text-charcoal leading-relaxed text-sm sm:text-base">
+
+        <!-- Section 1 -->
+        <section id="collect" class="bg-white rounded-2xl p-6 sm:p-8 border border-cream-dark/80 shadow-sm scroll-mt-28">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-sage/10 text-sage-dark font-serif font-bold text-sm flex items-center justify-center">1</div>
+            <h2 class="font-serif text-xl sm:text-2xl font-bold text-charcoal">Information Collected for Floral Orders</h2>
+          </div>
+          <p class="text-charcoal-light/80 mb-4 leading-relaxed">
+            When ordering flowers, custom wedding arrangements, or subscription bouquets from Pétale, we simulate the standard requirements for flower delivery services in Santiago:
+          </p>
+          <ul class="space-y-3 text-charcoal-light/90 pl-1">
+            <li class="flex items-start gap-3">
+              <span class="text-sage font-bold text-lg leading-none">✿</span>
+              <div>
+                <strong class="text-charcoal">Purchaser Details:</strong> Full name, contact email, and telephone number (used for delivery status notifications and payment confirmations).
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-sage font-bold text-lg leading-none">✿</span>
+              <div>
+                <strong class="text-charcoal">Recipient Information:</strong> Recipient name, full delivery address in Santiago (including comuna, street, apartment number, and building concierge notes), and recipient phone number for courier access.
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-sage font-bold text-lg leading-none">✿</span>
+              <div>
+                <strong class="text-charcoal">Gift Card Personalization:</strong> Any customized sentiment or message requested to be printed on our wax-sealed botanical notecards.
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Section 2 -->
+        <section id="usage" class="bg-white rounded-2xl p-6 sm:p-8 border border-cream-dark/80 shadow-sm scroll-mt-28">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-sage/10 text-sage-dark font-serif font-bold text-sm flex items-center justify-center">2</div>
+            <h2 class="font-serif text-xl sm:text-2xl font-bold text-charcoal">How Floral Order Data Is Utilized</h2>
+          </div>
+          <p class="text-charcoal-light/80 mb-4 leading-relaxed">
+            In our mock operational workflow, customer and order details are handled strictly to satisfy the floral creation and logistics process:
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="p-4 rounded-xl bg-cream/60 border border-cream-dark">
+              <h3 class="font-bold text-sm text-charcoal mb-1 flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-sage"></span>
+                Bouquet Assembly & Dispatch
+              </h3>
+              <p class="text-xs text-charcoal-light/75 leading-relaxed">
+                Florists prepare orders in our Providencia studio adhering to requested stems, colors, and timing windows.
+              </p>
+            </div>
+            <div class="p-4 rounded-xl bg-cream/60 border border-cream-dark">
+              <h3 class="font-bold text-sm text-charcoal mb-1 flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-sage"></span>
+                Santiago Courier Routing
+              </h3>
+              <p class="text-xs text-charcoal-light/75 leading-relaxed">
+                Addresses are shared only with our temperature-controlled flower delivery team to ensure fresh arrivals.
+              </p>
+            </div>
+            <div class="p-4 rounded-xl bg-cream/60 border border-cream-dark">
+              <h3 class="font-bold text-sm text-charcoal mb-1 flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-sage"></span>
+                Delivery Status Updates
+              </h3>
+              <p class="text-xs text-charcoal-light/75 leading-relaxed">
+                Automated SMS/WhatsApp notifications alerting the purchaser when the flowers leave the studio and upon arrival.
+              </p>
+            </div>
+            <div class="p-4 rounded-xl bg-cream/60 border border-cream-dark">
+              <h3 class="font-bold text-sm text-charcoal mb-1 flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-sage"></span>
+                Seasonal Newsletter (Opt-In)
+              </h3>
+              <p class="text-xs text-charcoal-light/75 leading-relaxed">
+                Occasional emails about fresh tulip arrivals, Valentine's Day collections, and holiday peony harvests.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section id="recipients" class="bg-white rounded-2xl p-6 sm:p-8 border border-cream-dark/80 shadow-sm scroll-mt-28">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-sage/10 text-sage-dark font-serif font-bold text-sm flex items-center justify-center">3</div>
+            <h2 class="font-serif text-xl sm:text-2xl font-bold text-charcoal">Recipient Discretion & Gift Card Privacy</h2>
+          </div>
+          <p class="text-charcoal-light/80 mb-3 leading-relaxed">
+            Flower bouquets are deeply personal expressions of love, celebration, sympathy, or appreciation. We treat recipient confidentiality with the utmost delicacy:
+          </p>
+          <div class="p-4 rounded-xl bg-cream-dark/40 border border-cream-dark text-xs sm:text-sm text-charcoal-light/90 space-y-2">
+            <p>
+              <strong>Anonymous Deliveries:</strong> If you choose not to sign your gift card, Pétale maintains the purchaser's anonymity. Recipient queries regarding sender identity are never answered without explicit purchaser consent.
+            </p>
+            <p>
+              <strong>Gift Cards:</strong> Card messages are printed and enclosed in sealed envelopes to safeguard your personal sentiments.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section id="security" class="bg-white rounded-2xl p-6 sm:p-8 border border-cream-dark/80 shadow-sm scroll-mt-28">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-sage/10 text-sage-dark font-serif font-bold text-sm flex items-center justify-center">4</div>
+            <h2 class="font-serif text-xl sm:text-2xl font-bold text-charcoal">Payment Security & Mockup Processing</h2>
+          </div>
+          <p class="text-charcoal-light/80 leading-relaxed mb-3">
+            In a live floral retail environment, payments would be handled via encrypted payment processors (such as Webpay Plus, Transbank, or Mercado Pago) with PCI-DSS compliance.
+          </p>
+          <p class="text-xs sm:text-sm text-charcoal-light/70 italic bg-cream/70 p-3.5 rounded-xl border border-cream-dark">
+            Note: As this website is a concept mockup, no live payment forms exist and credit card numbers are never requested or stored on this server.
+          </p>
+        </section>
+
+        <!-- Section 5 -->
+        <section id="cookies" class="bg-white rounded-2xl p-6 sm:p-8 border border-cream-dark/80 shadow-sm scroll-mt-28">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-sage/10 text-sage-dark font-serif font-bold text-sm flex items-center justify-center">5</div>
+            <h2 class="font-serif text-xl sm:text-2xl font-bold text-charcoal">Cookies & Browser Preferences</h2>
+          </div>
+          <p class="text-charcoal-light/80 leading-relaxed mb-3">
+            Our mockup application operates on modern static web standards. We do not use third-party tracking pixels, biometric tracking, or intrusive behavioral ad trackers.
+          </p>
+          <p class="text-charcoal-light/80 leading-relaxed">
+            Essential session storage may be utilized by modern browsers to retain client-side UI preferences (such as menu states or smooth scrolling performance).
+          </p>
+        </section>
+
+        <!-- Section 6 -->
+        <section id="rights" class="bg-white rounded-2xl p-6 sm:p-8 border border-cream-dark/80 shadow-sm scroll-mt-28">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-sage/10 text-sage-dark font-serif font-bold text-sm flex items-center justify-center">6</div>
+            <h2 class="font-serif text-xl sm:text-2xl font-bold text-charcoal">Your Rights & Choices</h2>
+          </div>
+          <p class="text-charcoal-light/80 leading-relaxed mb-4">
+            Customers have the right to request access to, correction of, or permanent deletion of their ordering history and newsletter subscriptions at any moment:
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-center">
+            <div class="p-4 rounded-xl bg-soft-white border border-cream-dark">
+              <span class="block text-sage font-bold text-lg mb-1">Access</span>
+              <p class="text-xs text-charcoal-light/70">Request a summary of past order logs & addresses.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-soft-white border border-cream-dark">
+              <span class="block text-sage font-bold text-lg mb-1">Opt-Out</span>
+              <p class="text-xs text-charcoal-light/70">Unsubscribe from floral newsletters with 1 click.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-soft-white border border-cream-dark">
+              <span class="block text-sage font-bold text-lg mb-1">Deletion</span>
+              <p class="text-xs text-charcoal-light/70">Request complete removal of personal contact records.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 7 -->
+        <section id="contact-policy" class="bg-gradient-to-br from-soft-white to-cream rounded-2xl p-6 sm:p-8 border border-sage/20 shadow-sm scroll-mt-28">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-sage text-white font-serif font-bold text-sm flex items-center justify-center">7</div>
+            <h2 class="font-serif text-xl sm:text-2xl font-bold text-charcoal">Mockup Contact & Inquiries</h2>
+          </div>
+          <p class="text-charcoal-light/80 leading-relaxed mb-4">
+            For inquiries regarding this demonstration document or the Pétale design system, you can contact the demonstration team:
+          </p>
+          <div class="space-y-2 text-xs sm:text-sm text-charcoal-light/90">
+            <p><strong>Boutique Atelier:</strong> Av. Providencia 1234, Providencia, Santiago, Chile</p>
+            <p><strong>Demonstration Email:</strong> <a href="mailto:privacy@petale-flores.mockup" class="text-sage-dark font-medium underline hover:text-sage">privacy@petale-flores.mockup</a></p>
+            <p><strong>Developer Portfolio:</strong> Designed & Built by 0x5</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- Action Footer Navigation -->
+      <div class="mt-12 pt-8 border-t border-cream-dark flex flex-col sm:flex-row items-center justify-between gap-4">
+        <a
+          href={base}
+          class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white border border-cream-dark text-charcoal font-semibold text-xs tracking-wider uppercase hover:border-sage hover:text-sage-dark transition-all duration-300 shadow-sm"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+          </svg>
+          Return to Home
+        </a>
+
+        <div class="flex items-center gap-4 text-xs font-semibold tracking-wider uppercase">
+          <span class="text-charcoal-light/50">Related:</span>
+          <a
+            href={`${base}/terms`}
+            class="text-sage-dark hover:text-sage transition-colors underline"
+          >
+            View Terms of Service →
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
